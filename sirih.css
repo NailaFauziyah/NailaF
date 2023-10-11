@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    width: 100%;
+    height:8%;
+    background-color: yellowgreen;
+}
+
+.logo span{
+    object-position: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.text-gradient{
+    background-image: linear-gradient(to right, black, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: times new roman;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 3px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: darkblue;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: green;
+    transition: .3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+marquee{
+    margin-top: 60px;
+    color: white;
+    background-color: green;
+    font-size: 15px;
+    position: fixed;
+    height: 20px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.beranda{
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+
+.beranda .text-container p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+ 
+.beranda .text-container p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    font-size: 60px;
+}
+
+.beranda .text-container p:nth-child(2) span{
+    color: darkgreen;
+}
+ 
+.beranda .text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: forestgreen;
+    font-size: 30px;
+    line-height: 30px;
+}
+ 
+.beranda .text-container p:nth-child(4){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+ 
+.beranda .text-container p{
+    line-height: 0px;
+    margin: 55px 0px 25px;
+}
+ 
+.beranda .text-container{
+    position: absolute;
+    left: 13%;
+    top: 45%;
+    transform: translate(-13%, -42%);
+}
+ 
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+ 
+ 
+.model{
+    height: 500px;
+    width: 750px;
+    position: relative;
+    bottom: -260px;
+    left: 80%;
+    transform: translateX(-70%);
+    border-radius: 20px;
+}
+
+i figcaption{
+    font-size: 13px;
+}

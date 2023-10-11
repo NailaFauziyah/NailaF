@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    width: 100%;
+    height:8%;
+    background-color: yellowgreen;
+}
+
+.logo span{
+    object-position: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.text-gradient{
+    background-image: linear-gradient(to right, black, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: times new roman;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+    border: 3px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: darkblue;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: green;
+    transition: .3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+marquee{
+    margin-top: 60px;
+    color: white;
+    background-color: green;
+    font-size: 15px;
+    position: fixed;
+    height: 20px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.beranda{
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+
+.beranda .text-container p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+ 
+.beranda .text-container p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    font-size: 60px;
+}
+
+.beranda .text-container p:nth-child(2) span{
+    color: darkgreen;
+}
+
+.beranda .text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: forestgreen;
+    font-size: 30px;
+    line-height: 30px;
+}
+ 
+.beranda .text-container p:nth-child(4){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.beranda .text-container p:nth-child(5){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 17px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+ 
+.beranda .text-container p{
+    line-height: 0px;
+    margin: 55px 0px 25px;
+}
+ 
+.beranda .text-container{
+    position: absolute;
+    left: 13%;
+    top: 50%;
+    transform: translate(-13%, -42%);
+}
+ 
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+ 
+
+.beranda .text-container .btn{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: green;
+    padding: 5px 20px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 200;
+    transition: all .4s ease-in-out;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.beranda .text-container .btn:hover{
+    background: transparent;
+    color: darkgreen;
+}
+ 
+.model{
+    height: 520px;
+    position: relative;
+    bottom: -270px;
+    left: 80%;
+    transform: translateX(-70%);
+    border-radius: 20px;
+}
+
+.col-3 img{
+    object-fit: cover;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.col-3 img:hover{
+    transform: scale(1.1);
+}
+
+.row .mt-3 b{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.row .col-3 .btn{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: green;
+    padding: 5px 15px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 200;
+    transition: all .4s ease-in-out;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.row .col-3 .btn:hover{
+    background: transparent;
+    color: darkgreen;
+}
+ 
+.services{
+    height:600px;
+    background-color:#f6f5f5;
+    padding: 3% 10% 0px 10%;
+}
+ 
+.services-text p:nth-child(1){
+    font-family: calibri;
+    font-weight:bold;
+    color:#1d1c1c;
+    font-size:30px;
+    line-height:0px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+ 
+.services-text p:nth-child(2){
+    font-family:calibri;
+    color:#7e7d7d;
+    text-align: center;
+}
+ 
+.services-text{
+    margin:50px 0px;
+}
+ 
+.box-container{
+    display:flex;
+    justify-content:space-between;
+}
+ 
+.testimoni{
+    width:100%;
+    height:90vh;
+    position: relative;
+    background-color:#FFFFFF;
+    padding: 6% 10% 0px 10%;
+    text-align: center;
+}
+ 
+.teks p{
+    font-family: calibri;
+    font-weight:bold;
+    color:#1d1c1c;
+    font-size:30px;
+    line-height:0px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 230px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: darkgreen;
+    font-weight: 500;
+    text-align: left;
+    font-family: calibri;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: ;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid darkgreen;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: gray;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: darkgreen;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: darkgreen;
+    color: whitesmoke;
+    border-radius: 40px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: all .6s ease-in-out;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    color: grey;
+    background: transparent;
+}
+
+ 
+footer p{
+    font-family: calibri;
+}
+ 
+footer p:nth-child(1){
+    font-size: 30px;
+    font-weight:bold;
+    color:#FFFFFF;
+    line-height:10px;
+}
+ 
+footer p:nth-child(2){
+    font-size: 16px;
+    color:#7e7d7d;
+    width:600px;
+    text-align: center;
+}
+ 
+footer{
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #191919;
+}
+
+.text-2 p{
+    color: white;
+    font-size: 5px;
+}
+ 
+.social-icons a{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6e3e3;
+    margin:10px 10px;
+    border-radius:50%;
+}
+ 
+.social-icons{
+    display: flex;
+     
+}
+ 
+.social-icons i,.social i{
+    color:#000000;
+}
+ 
+.social-icons a:hover{
+    background-color:yellowgreen;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    transition:all ease 0.5s;
+}
+ 
+.social-icons a:hover i,
+.social a:hover i{
+    color:#FFFFFF;
+    transition:all ease 0.5s;
+}
+  
+.copyright{
+    color:#565555;
+    font-size: 15px;
+    position: absolute;
+    left:50%;
+    bottom:10px;
+    transform: translateX(-50%);
+}
+.social{
+    position: fixed;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+}
+ 
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    margin:0px;
+    padding: 0px;
+    line-height:0px;
+    background-color:#FFFFFF;
+    border:1px solid #CBCBCB;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+ 
+.social a:hover{
+    background-color:#000000;
+    transition:all ease 0.5s;
+}
+ 
+.social i{
+    font-size:20px;
+    color:#2B2B2B;
+}
+
+.logo{
+    font-family:RoadTest;
+    color:#000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+body{
+    background-color:#ffffff;
+    margin:0px;
+    padding:0px;
+}
